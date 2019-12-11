@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class BookFlight {
+public class BookFlightPage {
 
-	private WebDriver bookFlightDriver;
+	private WebDriver driver;
 
 	@FindBy(name = "passFirst0")
 	private WebElement firstName;
@@ -28,24 +28,25 @@ public class BookFlight {
 	@FindBy(xpath="//input[@name='buyFlights']")
 	private WebElement purchaseButton;
 	
-	public BookFlight(WebDriver driver) {
-		bookFlightDriver=driver;
+	public BookFlightPage(WebDriver driver) {
+
+		driver = driver;
 		PageFactory.initElements(driver, this);
 		
 	}
 	
-	public String fillBillingDetails() {
+	public void fillBillingDetails() {
 		
 		firstName.sendKeys("Rohan");
 		lastName.sendKeys("Swayambhatla");
 		creditCardNum.sendKeys("44556677");
+
 		Select monthSel= new Select(expiryMonth);
+		monthSel.selectByVisibleText("10");
+
 		Select yearSel = new Select(expiryYear);
-		monthSel.selectByValue("10");
-		yearSel.selectByValue("2010");
+		yearSel.selectByVisibleText("2010");
 		purchaseButton.click();
-		
-		return bookFlightDriver.getTitle();
 	}
 	
 }

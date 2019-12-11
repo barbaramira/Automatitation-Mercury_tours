@@ -1,9 +1,6 @@
 package com.tours.test;
 
-import com.tours.pages.FindFlightPage;
-import com.tours.pages.FlightConfirmation;
-import com.tours.pages.LoginPage;
-import com.tours.pages.SelectFlightPage;
+import com.tours.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -56,7 +53,7 @@ public class TicketSale {
 		LoginPage loginPage = new LoginPage(driver);
 
 		SelectFlightPage selectFlight = new SelectFlightPage(driver);
-		FlightConfirmation flightConfirmation = new FlightConfirmation(driver);
+		FlightConfirmationPage flightConfirmation = new FlightConfirmationPage(driver);
 
 		String currentTitle = loginPage.loginToDemoaut("mercury","mercury");
 		String pageSource = driver.getPageSource();
@@ -86,6 +83,22 @@ public class TicketSale {
         selectFlightPage.selectFlights();
 
     }
+
+    @Test(priority = 4)
+    public void bookFlightTest() {
+
+        BookFlightPage bookFlightPage = new BookFlightPage(driver);
+        bookFlightPage.fillBillingDetails();
+
+    }
+
+	@Test(priority = 5)
+	public void logoutFlightTest() {
+
+		FlightConfirmationPage flightConfirmationPage = new FlightConfirmationPage(driver);
+		flightConfirmationPage.logout();
+
+	}
     /**
      * cierra navegadores
      */
