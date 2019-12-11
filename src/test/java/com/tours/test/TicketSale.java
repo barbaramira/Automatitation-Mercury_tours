@@ -69,33 +69,23 @@ public class TicketSale {
 			Assert.assertEquals(currentTitle, "Find a Flight: Mercury Tours:");
 		}
 	}
-
-	/**
-	 * Test depende del test loginToMercuryTours,
-	 */
-	@Test(dependsOnMethods = { "loginToMercuryTours" }, priority = 2, invocationCount = 1)
-	public void findFlightTest() {
-
-		FindFlightPage findFlightPage = new FindFlightPage(driver);
-		findFlightPage.findFlight(); //clic
-
-		String title = findFlightPage.verifySelectFlightTitle();
-		Assert.assertEquals(title, "Select a Flight: Mercury Tours"); //assert
-	}
-
     /**
-     *
+     * Test depende del test loginToMercuryTours,
      */
-	@Test(priority = 3)
-	public void selectFlightTest() {
+    @Test(dependsOnMethods = { "loginToMercuryTours" }, priority = 2, invocationCount = 1)
+    public void findFlightTest() {
 
-		SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
-		selectFlightPage.selectFlights();
+        FindFlightPage findFlightPage = new FindFlightPage(driver);
+        findFlightPage.findFlight();
+    }
 
-		String title = selectFlightPage.verifyBookFlightTitle();
-		Assert.assertEquals(title, "Book a Flight: Mercury Tours");
-	}
+    @Test(priority = 3)
+    public void selectFlightTest() {
 
+        SelectFlightPage selectFlightPage = new SelectFlightPage(driver);
+        selectFlightPage.selectFlights();
+
+    }
     /**
      * cierra navegadores
      */

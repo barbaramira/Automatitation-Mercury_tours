@@ -4,6 +4,7 @@
     <list default="true" id="df577c58-7558-4601-966f-09d3cd356c9b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/tours/test/TicketSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tours/test/TicketSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tours/test/TicketSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tours/test/TicketSale.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1575966610616" duration="566000" />
       <workItem from="1575997242492" duration="584000" />
       <workItem from="1576008019470" duration="3572000" />
-      <workItem from="1576048336448" duration="1212000" />
+      <workItem from="1576048336448" duration="3140000" />
     </task>
     <servers />
   </component>
@@ -111,26 +112,26 @@
     </state>
     <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576011898906" />
     <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575887755533" />
-    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1576013804589">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1576051155078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536344" />
-    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1576013804589">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576051155078" />
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1576051155078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
-    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1576013804589">
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576051155078" />
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1576051155077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
-    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1576013804589">
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576051155077" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1576051155078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576051155078" />
     <state x="406" y="186" key="SettingsEditor" timestamp="1576012728920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
