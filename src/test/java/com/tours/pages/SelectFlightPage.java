@@ -6,9 +6,12 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+/**
+ * Clase Buscador de vuelo
+ */
 public class SelectFlightPage {
 
-	private WebDriver selectFlightDriver;
+	private WebDriver driver;
 
 	@FindBy(xpath = "//input[contains(@value,'Unified')][@name='outFlight']")
 	@CacheLookup
@@ -22,24 +25,32 @@ public class SelectFlightPage {
 	@CacheLookup
 	private WebElement continueButton;
 
+	/**
+	 * Contructor
+	 * @param driver
+	 */
 	public SelectFlightPage(WebDriver driver) {
 
-		selectFlightDriver = driver;
+		driver = driver;
 		PageFactory.initElements(driver, this);
-
 	}
 
+	/**
+	 * metodo reune las opciones seleccionadas
+	 */
 	public void selectFlights() {
 
 		selectOutbound.click();
 		selectInbound.click();
 		continueButton.click();
-
 	}
 
+	/**
+	 * verifica el intinerario de vuelos
+	 * @return
+	 */
 	public String verifyBookFlightTitle() {
 
-		return selectFlightDriver.getTitle();
+		return driver.getTitle();
 	}
-
 }

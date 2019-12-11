@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df577c58-7558-4601-966f-09d3cd356c9b" name="Default Changelist" comment="" />
+    <list default="true" id="df577c58-7558-4601-966f-09d3cd356c9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tours/test/TicketSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tours/test/TicketSale.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,9 +34,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -40,7 +48,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TicketSale" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automatitation-Mercury_tours" />
       <extension name="coverage">
         <pattern>
@@ -49,7 +57,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tours.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tours.test.LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tours.test.TicketSale" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -59,7 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.TicketSale" />
       </list>
     </recent_temporary>
   </component>
@@ -76,7 +84,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\barba_000\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,7 +97,8 @@
       <workItem from="1575960950245" duration="1875000" />
       <workItem from="1575966610616" duration="566000" />
       <workItem from="1575997242492" duration="584000" />
-      <workItem from="1576008019470" duration="601000" />
+      <workItem from="1576008019470" duration="3572000" />
+      <workItem from="1576048336448" duration="1212000" />
     </task>
     <servers />
   </component>
@@ -97,30 +106,40 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="273" key="FileChooserDialogImpl" timestamp="1575887755533">
+    <state x="739" y="273" key="FileChooserDialogImpl" timestamp="1576011898906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576011898906" />
     <state x="739" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1575887755533" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1575885536344">
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom" timestamp="1576013804589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
     <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536344" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1575885536333">
+    <state width="1876" height="282" key="GridCell.Tab.0.center" timestamp="1576013804589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
     <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1575885536333">
+    <state width="1876" height="282" key="GridCell.Tab.0.left" timestamp="1576013804589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
     <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1575885536333">
+    <state width="1876" height="282" key="GridCell.Tab.0.right" timestamp="1576013804589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1876" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576013804589" />
     <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575885536333" />
-    <state x="459" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1576007765540">
+    <state x="406" y="186" key="SettingsEditor" timestamp="1576012728920">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="406" y="186" key="SettingsEditor/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576012728920" />
+    <state x="459" y="357" key="com.intellij.ide.util.TipDialog" timestamp="1576049110963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="459" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1280.680@0.0.1920.1040" timestamp="1576007765540" />
+    <state x="459" y="357" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576049110963" />
     <state x="342" y="220" key="new project wizard" timestamp="1575887758618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

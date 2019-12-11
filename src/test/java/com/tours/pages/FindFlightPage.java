@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class FindFlightPage {
 
-	private WebDriver findFlightPageDriver;
+	private WebDriver driver;
 	
 	@FindBy(css="input[value='Business']")
 	@CacheLookup
@@ -37,12 +37,17 @@ public class FindFlightPage {
 
 	public FindFlightPage(WebDriver driver) {
 
-		findFlightPageDriver=driver;
+		driver = driver;
 		PageFactory.initElements(driver, this);
 		
 	}
 
+	/**
+	 * Metodo que reune las opciones a seleccionar en
+	 * la pagina de buscar vuelo
+	 */
 	public void findFlight(){
+
 		oneWayRadioBtn.click();
 
 		Select selectOrigin = new Select(originCity);//Selecciona ciudad origuen
@@ -57,12 +62,13 @@ public class FindFlightPage {
 		
 		continueButton.click();
 	}
-	
+
+	/**
+	 * Metodod verifica el titulo de la seleccion del titulo
+	 * @return String
+	 */
 	public String verifySelectFlightTitle() {
 
-		return findFlightPageDriver.getTitle();
-		
+		return driver.getTitle();
 	}
-	
-			
 }

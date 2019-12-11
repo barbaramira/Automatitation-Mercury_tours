@@ -22,7 +22,10 @@ public class LoginPage {
 	@CacheLookup
 	private WebElement loginBtn;
 
-
+	/**
+	 * Contructor
+	 * @param driver
+	 */
 	public LoginPage(WebDriver driver) {
 
 		loginPageDriver=driver;
@@ -31,7 +34,7 @@ public class LoginPage {
 	}
 
 	/**
-	 * realiza el logeo de la pagina
+	 * realiza inicio de sesion en la pagina
 	 * @param userName
 	 * @param passWord
 	 * @return String

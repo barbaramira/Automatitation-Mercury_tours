@@ -12,11 +12,14 @@ import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class LoginTest {
+public class TicketSale {
 
 	public WebDriver driver;
 
-
+    /**
+     * provedor de datos
+     * @return Object[][]
+     */
 	@DataProvider(name = "users")
 	public Object[][] usersList() {
 
@@ -29,15 +32,19 @@ public class LoginTest {
 		return data;
 	};
 
+    /**
+     * metodo launchBrowser
+     * lanza navegador
+     */
 	@BeforeTest
 	public void launchBrowser() {
-		driver = new ChromeDriver();
 
-			Reporter.log("Browser Opened", true); // setting to true will print in console too
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			driver.get("http://newtours.demoaut.com");
-			driver.manage().window().maximize();
-			driver.manage().deleteAllCookies();
+		driver = new ChromeDriver();
+        Reporter.log("Browser Opened", true);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.get("http://newtours.demoaut.com");
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
 	}
 
 	/**
@@ -48,17 +55,13 @@ public class LoginTest {
 
 		LoginPage loginPage = new LoginPage(driver);
 
-
 		SelectFlightPage selectFlight = new SelectFlightPage(driver);
 		FlightConfirmation flightConfirmation = new FlightConfirmation(driver);
 
 		String currentTitle = loginPage.loginToDemoaut("mercury","mercury");
 		String pageSource = driver.getPageSource();
 
-	 	//##comprobando si hubo algún error##
-
 		if (pageSource.contains("Whitelabel Error")) {
-
 			System.out.println("Login Unsuccessful. Fatal Error");
 			driver.quit();
 
@@ -80,6 +83,9 @@ public class LoginTest {
 		Assert.assertEquals(title, "Select a Flight: Mercury Tours"); //assert
 	}
 
+    /**
+     *
+     */
 	@Test(priority = 3)
 	public void selectFlightTest() {
 
@@ -90,6 +96,9 @@ public class LoginTest {
 		Assert.assertEquals(title, "Book a Flight: Mercury Tours");
 	}
 
+    /**
+     * cierra navegadores
+     */
 	@AfterTest
 	public void tearDown() {
 		driver.close();
