@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.tours.listener.Listener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="Automatitation-Mercury_tours">
+        <classes>
+            <class name="com.tours.test.TicketSale"/>
+        </classes>
+    </test>
+</suite>
